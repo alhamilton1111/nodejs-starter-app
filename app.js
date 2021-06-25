@@ -51,7 +51,7 @@ app.get('/', function(req, res)
 
     // Run the 1st query
     db.pool.query(query1, function(error, rows, fields){
-        
+    console.log(rows);    
         // Save the people
         let people = rows;
         
